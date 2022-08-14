@@ -15,6 +15,19 @@ public class Main {
 //        items.add("Apple");
 
         printDoubled(items);
+
+        System.out.println("***************************");
+
+        FootballPlayer joe =new FootballPlayer("joe");
+        BaseballPlayer pat =new BaseballPlayer("Pat");
+        SoccerPlayer beckham =new SoccerPlayer("beckham");
+
+        Team<SoccerPlayer> liverpool = new Team<>("Liverpool");
+
+        //liverpool.addPlayer(joe);
+        liverpool.addPlayer(beckham);
+
+        //Team<String> brokenTeam = new Team<>("fseef");
     }
 
     private static void printDoubled(ArrayList<Integer> items) {
